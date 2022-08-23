@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://media.discordapp.net/attachments/707975903900205157/878268865807794227/unknown.png?width=670&height=670" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width">
+    <title>統神「接」火鍋</title>
+    <link href="/static/pre.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+    <div class="header">
+  	  <h1 class="title">統神「接」火鍋分數排行榜</h1>
+    </div>
+    <br><br><br>
+    <form action="/" method="POST">
+      <table border="1" align="center" width="300">
+        <tr>
+          <th>使用者</th>
+          <th>分數</th>
+          <th>成就</th>
+        </tr>
+        {% for s in ach%}
+          <tr>
+            <td>{{s[0]}}</td>
+            <td>{{s[1]}}</td>
+            <td>{{s[2]}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="title">
+      <button class="start_button" onclick="location.href='https://hotpot.guaichi.repl.co/'">返回</button>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <div id="page_top"><a href="#"></a></div>
+  </body>
+</html>

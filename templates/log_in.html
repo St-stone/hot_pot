@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://media.discordapp.net/attachments/707975903900205157/878268865807794227/unknown.png?width=670&height=670" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width">
+    <title>統神「接」火鍋</title>
+    <link href="/static/beta.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="title" id="User_title">請先登入</h1><br><br>
+		<form method="post" class="title" id="log_in">
+      <input id="User" placeholder="使用者名稱" name="User_name"></input><br><br>
+      <input id="password" placeholder="密碼" name="password1" type="password"></input><br><br>
+      <button class="start_button" name="send" type="submit">登入</button><br><br><br>
+    </form>
+    <div id="user_select" class="title">
+      <br><br><br>
+      <h2 class="title">請選擇要顯示的成就</h2><br>
+      <a href="https://hotpot.guaichi.repl.co/person_ach"><h3>
+        點我看說明
+      </h3><a>
+      <br><br>
+      <form method="post" class="title">
+        <select style="width: 200px" name="ach" id="ach"></select><br><br><br>
+        <h3 class="title">
+          若選單無內容：<br>
+          1.您可能未獲得成就<br>
+          2.請重新整理
+        </h3><br>
+        <button class="start_button" name="ach_s" type="submit" id="ach_s">送出</button>&emsp;
+        <button class="start_button" name="log_out" type="submit">登出</button>&emsp;
+      </form>
+    </div>
+    <br><br><br><br>
+    <div class="title">
+      <button class="start_button" onclick="location.href='https://hotpot.guaichi.repl.co/'">返回</button>
+    </div>
+    <script src="/static/login.js"></script>
+  </body>
+</html>
